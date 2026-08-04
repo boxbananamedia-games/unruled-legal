@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Unruled</title>
+<meta name="description" content="Privacy Policy for Unruled, a focus app for iPhone.">
+<meta name="color-scheme" content="dark light">
+<style>
+:root{
+  --surface:#1A2140; --raised:#232C52;
+  --ink:#fff; --ink-2:rgba(255,255,255,.76); --ink-3:rgba(255,255,255,.52);
+  --gold:#F5C480; --coral:#EE8A66; --rule:rgba(255,255,255,.12);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--surface); color:var(--ink-2);
+  font:400 17px/1.72 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  padding:0 24px 96px;
+}
+.wrap{max-width:74ch; margin:0 auto}
+header{padding:72px 0 8px}
+.brand{
+  display:inline-block; text-decoration:none; letter-spacing:-.02em;
+  font:800 20px/1 -apple-system,BlinkMacSystemFont,sans-serif;
+  background:linear-gradient(180deg,var(--gold),var(--coral));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+h1{
+  color:var(--ink); font-weight:800; letter-spacing:-.03em;
+  font-size:clamp(32px,6vw,46px); line-height:1.1; margin:28px 0 6px;
+}
+h2{
+  color:var(--ink); font-weight:700; letter-spacing:-.015em;
+  font-size:clamp(21px,3.4vw,25px); line-height:1.25; margin:52px 0 12px;
+}
+p,li{margin:0 0 16px}
+ul{padding-left:22px; margin:0 0 20px}
+li{margin-bottom:9px}
+strong{color:var(--ink); font-weight:650}
+a{color:var(--gold); text-decoration-color:rgba(245,196,128,.4); text-underline-offset:3px}
+a:hover{text-decoration-color:var(--gold)}
+code{
+  font:500 .89em ui-monospace,SFMono-Regular,Menlo,monospace;
+  background:var(--raised); padding:.14em .42em; border-radius:5px; color:var(--ink);
+}
+hr{border:0; border-top:1px solid var(--rule); margin:44px 0}
+.updated{
+  color:var(--ink-3); font-size:15px; margin:0 0 4px;
+  font-style:italic; font-family:ui-serif,"New York",Georgia,serif;
+}
+.lede{font-size:19px; line-height:1.66}
+footer{
+  margin-top:72px; padding-top:28px; border-top:1px solid var(--rule);
+  color:var(--ink-3); font-size:15px;
+}
+footer a{margin-right:20px}
+/* Light mode: legal text gets read in daylight too. */
+@media (prefers-color-scheme:light){
+  :root{
+    --surface:#fdfbf7; --raised:#f0ece4;
+    --ink:#1A2140; --ink-2:#3c4257; --ink-3:#6b7280; --rule:rgba(26,33,64,.14);
+  }
+  a{color:#9a5a2c; text-decoration-color:rgba(154,90,44,.4)}
+  a:hover{text-decoration-color:#9a5a2c}
+}
+</style>
+</head><body><div class="wrap">
+<header><a class="brand" href="index.html">Unruled</a></header>
+<h1>Privacy Policy — Unruled</h1>
+<p class="updated"><strong>Last updated: 2 August 2026</strong></p>
+<p>Unruled is made by Virtus Nordic, Denmark. This policy explains exactly what the app does with your information. It is written to be accurate rather than broad: everything below was checked against what the app actually does, not what it might do one day.</p>
+<p>The short version: <strong>Unruled works without an account, and your blocklists, schedules and focus history never leave your iPhone.</strong> There is no analytics, no advertising, no tracking, and nothing is sold.</p>
+<hr>
+<h2>What stays on your device</h2>
+<p>All of the following is stored only on your iPhone, in a private container shared between Unruled and its own extensions. None of it is transmitted anywhere:</p>
+<ul><li>Your blocklists — the apps and websites you choose to block</li><li>Your schedules and day templates</li><li>Your focus session history, streaks and totals</li><li>Your app settings</li></ul>
+<p>Deleting Unruled removes all of it. It is not backed up to us, because we never receive it.</p>
+<h2>Screen Time and your apps</h2>
+<p>Unruled uses Apple&#x27;s Screen Time (Family Controls) framework to shield apps. This matters for your privacy in a specific way:</p>
+<p><strong>Unruled cannot see which apps you chose.</strong> When you pick apps in the system picker, iOS hands the app an opaque token rather than a name or bundle identifier. The tokens are meaningless outside your device. Screen Time also gives Unruled no access to your usage history, and the app does not request it.</p>
+<p>The shields themselves are applied by iOS, not by us.</p>
+<h2>Website blocking and the VPN configuration</h2>
+<p>To block websites, Unruled adds a <strong>local VPN configuration</strong>. This is a standard iOS mechanism and it is worth being precise about what it does:</p>
+<ul><li>It runs entirely on your device. Your browsing is <strong>not</strong> routed through our servers. We operate no proxy and no VPN server.</li><li>It inspects DNS lookups — the step where a domain name is turned into an address — and answers blocked domains with a &quot;not found&quot; reply.</li><li>Lookups that are <strong>not</strong> blocked are forwarded to <strong>Cloudflare&#x27;s public DNS resolver at 1.1.1.1</strong> so that ordinary browsing works. Those queries are subject to <a href="https://developers.cloudflare.com/1.1.1.1/privacy/">Cloudflare&#x27;s privacy commitments</a>. This is the same kind of lookup your device already performs; Unruled does not log, store or transmit it.</li></ul>
+<p>Website blocking is active only while a session or a scheduled block is running.</p>
+<h2>If you choose to create an account</h2>
+<p>An account is <strong>optional</strong>. Unruled is fully functional without one. You only need one for referral codes, and (in future) for syncing between devices.</p>
+<p>If you sign in, we receive and store:</p>
+<ul><li><strong>Your email address</strong></li><li><strong>A user identifier</strong> created for you</li></ul>
+<p>Sign-in is handled by <a href="https://supabase.com">Supabase</a>, which hosts our authentication on our behalf as a data processor. If you use <strong>Sign in with Apple</strong>, Apple can hide your real address behind a private relay — we then only ever see the relay address.</p>
+<p>If you use a referral code, we store the code, which account created it, and which account redeemed it, so the reward can be granted once and not repeatedly.</p>
+<p>We do not store your blocklists, schedules or history on our servers.</p>
+<h2>Purchases</h2>
+<p>Purchases and subscriptions are handled entirely by <strong>Apple</strong>. We never see your card details, billing address or Apple ID password. We receive only whether an entitlement is active.</p>
+<p>At the time of writing, Unruled is free and offers no in-app purchases.</p>
+<h2>Notifications</h2>
+<p>Notifications are scheduled <strong>locally on your device</strong> — a session start, an ending-soon reminder, and a sound when a session ends. There are no push notifications, so no notification token is sent to us or to anyone else.</p>
+<h2>What we do not do</h2>
+<ul><li>We do <strong>not</strong> use analytics, crash reporting, advertising or attribution SDKs. There are none in the app.</li><li>We do <strong>not</strong> track you across apps or websites, and do not request Apple&#x27;s tracking permission.</li><li>We do <strong>not</strong> sell or share your personal information.</li><li>We do <strong>not</strong> profile you or make automated decisions about you.</li></ul>
+<h2>Your rights</h2>
+<p>If you have an account, you can ask us to give you a copy of the data associated with it, correct it, or delete it. Because almost everything Unruled knows about your use of it lives on your own device, deletion is usually as simple as deleting the app.</p>
+<p>If you are in the EU or UK, you have rights under the GDPR including access, rectification, erasure, restriction, objection and portability, and the right to complain to your local supervisory authority. In Denmark that is Datatilsynet.</p>
+<p>Our lawful basis for processing account data is performance of a contract (providing the account features you asked for). We keep account data for as long as the account exists.</p>
+<h2>Children</h2>
+<p>Unruled is not directed at children under 13 and we do not knowingly collect their personal information.</p>
+<h2>Changes</h2>
+<p>If this policy changes materially we will update the date at the top and, where appropriate, tell you in the app.</p>
+<h2>Contact</h2>
+<p>Questions, or a request about your data:</p>
+<p><strong>[YOUR SUPPORT EMAIL]</strong> Virtus Nordic, Denmark</p>
+<footer><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><br><br>Virtus Nordic, Denmark</footer>
+</div></body></html>
